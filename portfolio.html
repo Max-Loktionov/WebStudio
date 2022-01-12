@@ -26,46 +26,100 @@
         <a href="./index.html" class="logo header__logo"
           >Web<span class="header__logo--black">Studio</span>
         </a>
-        <!-- ..... навигация сайта ... -->
-        <nav>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- .....почта+телефон.==header=.......-->
-        <ul class="studio-contacts">
-          <li class="studio-contacts__item">
-            <a href="mailto:info@devstudio.com" class="studio-contacts__link">
-              <svg class="mail studio-contacts__svg">
-                <use
-                  xlink:href="./images/icons.svg/symbol-defs2.svg#envelope"
-                  class="envelope"
-                ></use></svg
-              >info@devstudio.com
-            </a>
-          </li>
-          <li class="studio-contacts__item">
-            <a href="tel:+380961111111" class="studio-contacts__link">
-              <svg class="phone studio-contacts__svg">
-                <use
-                  xlink:href="./images/icons.svg/symbol-defs2.svg#smartphone"
-                ></use></svg
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+
+        <button
+          type="button"
+          class="mobile-menu__button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="mobile-menu__svg"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="mobile-menu__icon-cross"
+              href="./images/icons.svg/symbol-defs2.svg#icon-close_40px"
+            ></use>
+            <use
+              class="mobile-menu__icon-menu"
+              href="./images/icons.svg/symbol-defs2.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu" data-menu id="menu-container">
+          <!-- ..... ====навигация сайта ===========... -->
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ..... ====навигация сайта--END======= ... -->
+
+          <div class="connect">
+            <!-- .....почта+телефон.==header=.......-->
+            <ul class="studio-contacts">
+              <li class="studio-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="studio-contacts__link"
+                >
+                  <svg class="mail studio-contacts__svg">
+                    <use
+                      xlink:href="./images/icons.svg/symbol-defs2.svg#envelope"
+                      class="envelope"
+                    ></use></svg
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="studio-contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="studio-contacts__link studio-contacts__link__big"
+                >
+                  <svg class="phone studio-contacts__svg">
+                    <use
+                      xlink:href="./images/icons.svg/symbol-defs2.svg#smartphone"
+                    ></use></svg
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <!-- .....почта+телефон.==header=END...=====.......-->
+            <!-- ======social for mobile============ -->
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Instagram</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Twitter</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Facebook</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">LinkedIn</a>
+              </li>
+            </ul>
+            <!-- ======social for mobile ...END...============ -->
+          </div>
+        </div>
       </div>
     </header>
     <!--==================header==END====-->
@@ -394,7 +448,7 @@
         <!-- ..........Подписаться................ -->
 
         <div class="subscribe">
-          <form>
+          <form class="subscribe__form">
             <label for="mail" class="subscribe__label">
               <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
             </label>
@@ -414,5 +468,7 @@
         <!-- ..........Подписаться.00.End.............. -->
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

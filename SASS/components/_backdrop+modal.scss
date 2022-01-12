@@ -1,13 +1,17 @@
 .backdrop {
   position: fixed;
-  z-index: 2;
-  top: 0%;
-  left: 0%;
   width: 100%;
   height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+
+  overflow-y: scroll;
+
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+
   transition: visibility 400ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -16,18 +20,21 @@
     pointer-events: none;
     opacity: 0;
   }
+
+  @media screen and (max-width: 767px) {
+    padding: 94px 15px;
+  }
+}
+
+body.modal--open {
+  overflow: hidden;
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 3;
 
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -43,6 +50,16 @@
     transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 400ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -71,6 +88,11 @@
   &:focus {
     border: 1px solid var(--accent-color);
   }
+
+  @media screen and (max-width: 767px) {
+    top: 102px;
+    right: 23px;
+  }
 }
 
 .btn-close__icon {
@@ -97,7 +119,10 @@
 
   @include texter(20px, 700, none);
 
-  line-height: 1.15;
+  line-height: 1.5;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__field {
@@ -190,11 +215,19 @@
   justify-content: center;
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  @include texter(12px, 400, none);
+
+  line-height: 1.17;
+  color: currentColor;
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include texter(14px, 400, none);
+
+    line-height: 1.71;
   }
 }
 
