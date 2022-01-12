@@ -1,0 +1,52 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--hero-back);
+}
+/* фон для героя картинка+затемнение доп класс к секции hero */
+.overlay {
+  text-align: center;
+  height: 400px;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 480px) {
+    width: var(--mobile);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: var(--tablet);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 600px;
+  }
+}
+
+/* hero-title */
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @include texter(26px, 900, uppercase);
+
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  color: var(--text-color-white);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
