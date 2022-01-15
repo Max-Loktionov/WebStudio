@@ -68,13 +68,11 @@ a {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: darkorange;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: green;
   }
 }
 
@@ -1335,7 +1333,6 @@ body.modal--open {
 }
 
 .team__list {
-  background-color: violet;
   margin: -15px;
 }
 @media screen and (min-width: 768px) {
@@ -1825,7 +1822,6 @@ body.modal--open {
       flex-wrap: wrap;
   margin: -15px;
   padding: 0;
-  background-color: #9edb4d;
 }
 
 .portfolio__item {
