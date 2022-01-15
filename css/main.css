@@ -321,11 +321,6 @@ a {
     display: flex;
   }
 }
-@media screen and (max-height: 350px), (max-width: 379px) {
-  .menu {
-    padding: 32px 32px;
-  }
-}
 @media screen and (min-width: 768px) {
   .menu {
     display: -webkit-box;
@@ -334,6 +329,11 @@ a {
     position: static;
     padding: 0;
     height: auto;
+  }
+}
+@media screen and (max-height: 480px), (max-width: 379px) {
+  .menu {
+    padding: 15px 15px;
   }
 }
 
@@ -354,11 +354,6 @@ a {
     padding-bottom: 32px;
   }
 }
-@media screen and (max-height: 350px), (max-width: 379px) {
-  .site-nav__item:not(:last-child) {
-    padding-bottom: 20px;
-  }
-}
 @media screen and (min-width: 768px) {
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
@@ -370,6 +365,11 @@ a {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+  }
+}
+@media screen and (max-height: 480px), (max-width: 379px) {
+  .site-nav__item {
+    padding-bottom: 15px;
   }
 }
 
@@ -396,11 +396,6 @@ a {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-height: 350px), (max-width: 379px) {
-  .site-nav__link {
-    font-size: 28px;
-  }
-}
 @media screen and (min-width: 768px) {
   .site-nav__link {
     padding-top: 32px;
@@ -408,6 +403,11 @@ a {
     position: relative;
     font-size: 14px;
     line-height: 1.14;
+  }
+}
+@media screen and (max-height: 480px), (max-width: 379px) {
+  .site-nav__link {
+    font-size: 20px;
   }
 }
 .site-nav__link:hover, .site-nav__link:focus {
@@ -473,12 +473,12 @@ a {
   margin-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media screen and (max-height: 350px), (max-width: 379px) {
+@media screen and (max-height: 480px), (max-width: 379px) {
   .mobile-menu__item:not(:last-child)::after {
     margin-left: 5px;
   }
 }
-@media screen and (max-height: 350px), (max-width: 379px) {
+@media screen and (max-height: 480px), (max-width: 379px) {
   .mobile-menu__item:not(:last-child) {
     margin-right: 5px;
   }
@@ -497,9 +497,9 @@ a {
   letter-spacing: 0.02em;
   line-height: 1.22;
 }
-@media screen and (max-height: 350px), (max-width: 379px) {
+@media screen and (max-height: 480px), (max-width: 379px) {
   .mobile-menu__link {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
