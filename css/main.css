@@ -810,7 +810,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .backdrop {
-    padding: 94px 15px;
+    padding: 15px 15px;
   }
 }
 body.modal--open {
@@ -889,7 +889,7 @@ body.modal--open {
 }
 @media screen and (max-width: 767px) {
   .btn-close {
-    top: 102px;
+    top: 23px;
     right: 23px;
   }
 }
