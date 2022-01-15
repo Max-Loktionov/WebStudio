@@ -37,6 +37,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-basis: 1200px;
+    text-align: start;
   }
 }
 
@@ -128,6 +129,9 @@
 .accede__list {
   padding: 0;
   margin: 0;
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .accede__link {
@@ -141,15 +145,16 @@
   fill: var(--primary-back);
 }
 /* =============subscribe======== */
-.subscribe {
-  text-align: center;
-  flex-grow: 1;
+// .subscribe {
+//   text-align: center;
 
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     margin-left: auto;
+//     text-align: start;
+//   }
+// }
 .subscribe__form {
+  flex-grow: 1;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
 
@@ -159,15 +164,12 @@
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 12px;
+    margin-left: auto;
   }
 }
 
 .subscribe__label {
   display: block;
-  @media screen and (min-width: 1200px) {
-    margin-left: 15px;
-  }
 }
 
 .subscribe__input {
