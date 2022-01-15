@@ -60,19 +60,19 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 480px;
+    max-width: 1200px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 1200px;
+    max-width: 480px;
   }
 }
 
@@ -129,22 +129,6 @@ a {
   margin-right: auto;
   max-width: 1600px;
 }
-@media screen and (max-width: 1199px) {
-  .section {
-    width: 768px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .section {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 
 /*class="section-title"  */
 /* Скрывает заголовки */
@@ -180,21 +164,9 @@ a {
   border-bottom: 1px solid #ececec;
   max-width: 1600px;
 }
-@media screen and (max-width: 1199px) {
-  .header {
-    width: var(--tablet);
-  }
-}
-@media screen and (max-width: 767px) {
-  .header {
-    width: var(--mobile);
-  }
-}
 
 .header__container {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .header__container {
@@ -684,26 +656,21 @@ a {
   padding-bottom: 118px;
   max-width: 1600px;
   background-color: var(--hero-back);
+  text-align: center;
 }
 
 /* фон для героя картинка+затемнение доп класс к секции hero */
 .overlay {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  height: 400px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/picture/mobile2х/hero-back.jpg);
+  background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/picture/mobile2х/hero-back.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/picture/mobile2х/hero-back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-@media screen and (min-width: 320px) {
-  .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/picture/mobile2х/hero-back.jpg);
-    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/picture/mobile2х/hero-back.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/picture/mobile2х/hero-back.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/picture/mobile2х/hero-back@2x.jpg);
     background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/picture/mobile2х/hero-back@2x.jpg);
@@ -1146,15 +1113,13 @@ body.modal--open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-        flex-basis: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
-        flex-basis: calc((100% - 4 * 30px) / 4);
+    width: calc((100% - 4 * 30px) / 4);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1470,16 +1435,6 @@ body.modal--open {
   max-width: 1600px;
   background-color: var(--dark-back);
   padding: 60px 0;
-}
-@media screen and (max-width: 1199px) {
-  .footer {
-    width: var(--tablet);
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer {
-    width: var(--mobile);
-  }
 }
 
 .footer__container {
