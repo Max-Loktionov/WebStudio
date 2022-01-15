@@ -1,14 +1,32 @@
 /*--- Хедер---- */
 
 .header {
-  @media screen and (min-width: 768px) {
-    border-bottom: 1px solid #ececec;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ececec;
+  max-width: 1600px;
+
+  @media screen and (max-width: 1199px) {
+    width: var(--tablet);
   }
+
+  @media screen and (max-width: 767px) {
+    width: var(--mobile);
+  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // }
 }
+// @media screen and (min-width: 1200px) {
+//   .header {
+//     max-width: 1600px;
+//   }
+// }
 
 .header__container {
   position: relative;
-  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 480px) {
     width: var(--mobile);
@@ -21,7 +39,7 @@
     align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
-    width: var(--desktop);
+    width: 1200px;
   }
 }
 

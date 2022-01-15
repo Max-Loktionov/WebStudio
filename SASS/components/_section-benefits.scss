@@ -9,11 +9,11 @@
     display: inline-block;
     align-items: center;
 
-    width: calc((100% - 2 * 30px) / 2);
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 4 * 30px) / 4);
+    flex-basis: calc((100% - 4 * 30px) / 4);
   }
 
   &:not(:last-child) {
@@ -39,9 +39,9 @@
   padding-bottom: 4px;
 }
 
-// .benefits__pic {
-
-// }
+.benefits__pic {
+  flex-grow: 1;
+}
 .benefits__title {
   margin-top: 0;
   margin-bottom: 10px;

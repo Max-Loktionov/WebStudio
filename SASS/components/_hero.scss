@@ -1,15 +1,26 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  max-width: 1600px;
   background-color: var(--hero-back);
+
+  @media screen and (max-width: 1199px) {
+    width: 768px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 480px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 1600px;
+  // }
 }
 /* фон для героя картинка+затемнение доп класс к секции hero */
 .overlay {
-  text-align: center;
-  height: 400px;
-  width: 100vw;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  height: 400px;
 
   background-image: linear-gradient(
       to right,
@@ -20,17 +31,18 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  @media screen and (min-width: 480px) {
-    width: var(--mobile);
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: var(--mobile);
+  // }
 
-  @media screen and (min-width: 768px) {
-    width: var(--tablet);
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    height: 600px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: var(--tablet);
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   height: 600px;
+  //   max-width: 1600px;
+  // }
 }
 
 /* hero-title */

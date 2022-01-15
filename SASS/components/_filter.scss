@@ -1,10 +1,11 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin: 0 0 40px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin: 0 0 14px;
   }
 }
 
@@ -23,6 +24,17 @@
   }
 }
 
+.filter__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
 .filter__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter__item:not(:nth-child(-n + 3)) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
