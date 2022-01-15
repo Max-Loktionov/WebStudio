@@ -1690,6 +1690,15 @@ body.modal--open {
   }
 }
 
+.subscribe__label {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__label {
+    margin-left: 15px;
+  }
+}
+
 .subscribe__input {
   height: 50px;
   width: 100%;
