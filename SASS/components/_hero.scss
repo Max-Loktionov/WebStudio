@@ -3,17 +3,6 @@
   padding-bottom: 118px;
   max-width: 1600px;
   background-color: var(--hero-back);
-
-  @media screen and (max-width: 1199px) {
-    width: 768px;
-  }
-  @media screen and (max-width: 767px) {
-    width: 480px;
-  }
-
-  // @media screen and (min-width: 1200px) {
-  //   max-width: 1600px;
-  // }
 }
 /* фон для героя картинка+затемнение доп класс к секции hero */
 
