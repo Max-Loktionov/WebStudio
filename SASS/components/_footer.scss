@@ -140,14 +140,17 @@
   fill: var(--primary-back);
 }
 /* =============subscribe======== */
-// .subscribe {
-//   text-align: center;
+.subscribe {
+  // text-align: center;
 
-//   @media screen and (min-width: 1200px) {
-//     margin-left: auto;
-//     text-align: start;
-//   }
-// }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: auto;
+  //   text-align: start;
+  // }
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
 .subscribe__form {
   // flex-grow: 1;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -157,7 +160,6 @@
   }
   @media screen and (max-width: 1199px) {
     flex-direction: column;
-    margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
@@ -171,6 +173,7 @@
 .subscribe__input {
   height: 50px;
   width: 100%;
+  padding: 15px 16px;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
@@ -178,7 +181,6 @@
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
-    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1200px) {

@@ -160,6 +160,7 @@ a {
     font-weight: 700;
     font-size: 36px;
     text-transform: none;
+    line-height: 1.17;
   }
 }
 .section__title--invisible {
@@ -416,14 +417,15 @@ a {
   }
 }
 
-.connect {
-  position: absolute;
-  bottom: 48px;
-  left: 40px;
+@media screen and (max-width: 767px) {
+  .connect {
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .connect {
-    position: static;
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,55 +600,60 @@ a {
   }
 }
 
+.studio-contacts__svg {
+  margin-right: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: currentColor;
+  -webkit-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+       -o-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (max-width: 767px) {
   .studio-contacts__svg {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .studio-contacts__svg {
     margin-right: 10px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    fill: currentColor;
-    -webkit-transition-property: fill;
-    -o-transition-property: fill;
-    transition-property: fill;
-    -webkit-transition-duration: 250ms;
-         -o-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .studio-contacts__link:hover .studio-contacts__svg, .studio-contacts__link:focus .studio-contacts__svg {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-  }
+}
+.studio-contacts__link:hover .studio-contacts__svg, .studio-contacts__link:focus .studio-contacts__svg {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .phone {
   width: 10px;
-  height: 16px;
+  height: 14px;
+  margin-right: 8px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .phone {
     width: 10px;
-    height: 14px;
-    margin-right: 8px;
+    height: 16px;
+    margin-right: 10px;
   }
 }
 
 .mail {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .mail {
-    width: 14px;
-    height: 10px;
-    margin-right: 8px;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
   }
 }
 
@@ -1155,12 +1162,6 @@ body.modal--open {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .benefits__text {
-    padding-bottom: 4px;
-  }
-}
-
 .benefits__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -1594,6 +1595,12 @@ body.modal--open {
 }
 
 /* =============subscribe======== */
+@media screen and (max-width: 767px) {
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe__form {
     display: -webkit-box;
@@ -1610,7 +1617,6 @@ body.modal--open {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1626,6 +1632,7 @@ body.modal--open {
 .subscribe__input {
   height: 50px;
   width: 100%;
+  padding: 15px 16px;
   text-indent: 16px;
   background-color: rgba(255, 255, 255, 0);
   color: var(--primary-title-color);
@@ -1651,7 +1658,6 @@ body.modal--open {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe__input {
     width: 450px;
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
