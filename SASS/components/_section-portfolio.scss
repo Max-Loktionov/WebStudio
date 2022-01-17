@@ -45,7 +45,6 @@
 
 .portfolio__img {
   width: 370px;
-  //  height="294"
   @media screen and (max-width: 767px) {
     width: 450px;
   }
@@ -108,7 +107,6 @@
   border-right: 1px solid #eeeeee;
 
   @media screen and (min-width: 768px) {
-    // flex-basis: 146px;
     flex-grow: 1;
   }
 }
