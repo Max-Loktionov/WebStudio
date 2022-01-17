@@ -4,6 +4,10 @@
   max-width: 1600px;
   background-color: var(--hero-back);
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
 /* фон для героя картинка+затемнение доп класс к секции hero */
 
@@ -28,7 +32,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/picture/mobile2х/hero-back.jpg);
+    url(../images/picture/mobile/hero-back.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,7 +45,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/picture/mobile2х/hero-back@2x.jpg);
+      url(../images/picture/mobile/hero-back@2x.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +57,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/picture/tablet2x/hero-back.jpg);
+      url(../images/picture/tablet/hero-back.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,7 +70,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/picture/tablet2x/hero-back@2x.jpg);
+        url(../images/picture/tablet/hero-back@2x.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -79,7 +83,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/picture/desktop2x/hero-back.jpg);
+      url(../images/picture/desktop/hero-back.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,7 +96,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/picture/desktop2x/hero-back@2x.jpg);
+        url(../images/picture/desktop/hero-back@2x.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;

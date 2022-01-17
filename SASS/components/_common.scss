@@ -70,21 +70,25 @@
   //   width: 480px;
   // }
 
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 /*class="section-title"  */ /* Скрывает заголовки */
 .section__title {
   margin-bottom: 30px;
   margin-top: 0;
+
+  @include texter(28px, 700, none);
+  line-height: 1.17;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
-  }
 
-  @include texter(36px, 700, none);
-  line-height: 1.17;
+    @include texter(36px, 700, none);
+    // line-height: 1.17;
+  }
 
   &--invisible {
     position: absolute;

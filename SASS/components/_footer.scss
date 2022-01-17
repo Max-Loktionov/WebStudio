@@ -6,10 +6,6 @@
 
   padding: 60px 0;
 
-  // @media screen and (max-width: 1199px) {
-  //   width: var(--tablet);
-  // }
-
   // @media screen and (max-width: 767px) {
   //   width: var(--mobile);
   // }
@@ -42,15 +38,13 @@
 }
 
 .footer__box {
-  flex-grow: 1;
+  @media screen and (max-width: 1199px) {
+    // margin-bottom: 60px;
+  }
 }
 
 .footer__address {
   font-style: normal;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
 }
 
 .footer__logo {
@@ -62,7 +56,7 @@
 }
 
 .adress__item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
@@ -102,13 +96,14 @@
 /* =======. Присоединяйтесь..=accede..=========== */
 
 .accede {
-  flex-grow: 1;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
+  // flex-grow: 1;
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 60px;
+  // }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 165px;
+  @media screen and (max-width: 767px) {
+    // margin-left: 165px;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -154,7 +149,7 @@
 //   }
 // }
 .subscribe__form {
-  flex-grow: 1;
+  // flex-grow: 1;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
 
@@ -162,6 +157,7 @@
   }
   @media screen and (max-width: 1199px) {
     flex-direction: column;
+    margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
