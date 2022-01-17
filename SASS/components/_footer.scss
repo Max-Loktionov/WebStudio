@@ -16,14 +16,14 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (min-width: 480px) {
+    flex-basis: 480px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
     flex-basis: 768px;
-  }
-
-  @media screen and (min-width: 480px) {
-    flex-basis: 480px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -140,26 +140,15 @@
   fill: var(--primary-back);
 }
 /* =============subscribe======== */
-.subscribe {
-  // text-align: center;
 
-  // @media screen and (min-width: 1200px) {
-  //   margin-left: auto;
-  //   text-align: start;
-  // }
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
-  }
-}
 .subscribe__form {
-  // flex-grow: 1;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-
+    flex-direction: column;
     align-items: center;
   }
   @media screen and (max-width: 1199px) {
-    flex-direction: column;
+    margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
