@@ -1109,10 +1109,6 @@ body.modal--open {
   margin-left: 5px;
 }
 
-.benefits {
-  padding-top: 94px;
-}
-
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1183,6 +1179,9 @@ body.modal--open {
   }
 }
 
+.work {
+  padding-bottom: 94px;
+}
 @media screen and (max-width: 1200px) {
   .work {
     display: none;
