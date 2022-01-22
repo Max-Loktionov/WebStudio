@@ -246,6 +246,9 @@
     background-color: rgba(33, 33, 33, 0.2);
     margin-left: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    font-size: inherit;
+    line-height: 1.22;
+    border-width: 0.5px;
 
     @media screen and (max-height: 380px) and (max-width: 320px) {
       margin-left: 5px;
